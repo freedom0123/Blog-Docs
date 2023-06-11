@@ -1,0 +1,48 @@
+.VPHome {
+  // 自定义首页背景图
+  &::before {
+    // 图片来源：https://zhuanlan.zhihu.com/p/54060187
+    background-image: url(./assets/beijing.jpg);
+    background-size: cover;
+  }
+  // 定义遮罩样式
+  background: radial-gradient(
+    ellipse,
+    rgba(var(--bg-gradient-home), 1) 0%,
+    rgba(var(--bg-gradient-home), 0) 150%
+  );
+}
+.vp-doc {
+  h2 {
+   margin: 20px 0px 16px;
+  }
+  h4 {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  p {
+    line-height: 34px;
+  }
+  blockquote {
+    margin: 2em 0;
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 5px;
+    border-left: 5px solid rgba(60, 60, 67, 0.12);
+    position: relative;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-end: 40px;
+    background-color: #f3f5f7;
+    border-color: #42b983;
+    color: cornflowerblue;
+  }
+  blockquote > p {
+    color: cornflowerblue;
+  }
+  li {
+    margin-top: 5px;
+    margin-bottom:10px;
+  }
+}
