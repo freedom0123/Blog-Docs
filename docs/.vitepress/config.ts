@@ -8,18 +8,18 @@ const blogTheme = getThemeConfig({
   // 友链
   friend: [
     {
-      nickname: '粥里有勺糖',
-      des: '你的指尖用于改变世界的力量',
+      nickname: '小林Coding',
+      des: '小林 x 图解计算机基础',
       avatar:
-        'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
-      url: 'https://sugarat.top'
+        'https://xiaolincoding.com/logo.png',
+      url: 'https://xiaolincoding.com/'
     },
     {
-      nickname: 'Vitepress',
-      des: 'Vite & Vue Powered Static Site Generator',
+      nickname: 'bugstack 虫洞栈 ',
+      des: '小傅哥网站',
       avatar:
-        'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTI2NzY1Ng==674995267656',
-      url: 'https://vitepress.vuejs.org/'
+        'https://bugstack.cn/images/system/blog-03.png',
+      url: 'https://bugstack.cn/'
     }
   ],
   recommend: {
@@ -69,17 +69,17 @@ export default defineConfig({
   themeConfig: {
     lastUpdatedText: '上次更新于',
     footer: {
-      message: '一步一步向前走',
+      message: '坚持，坚持，在坚持',
       copyright:
         'MIT Licensed | <a target="_blank" href="https://theme.sugarat.top/"> @sugarat/theme </a>'
     },
     logo: '/logo.png',
-    /*socialLinks: [
+    socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/ATQQ/sugar-blog/tree/master/packages/theme'
+        link: 'https://github.com/freedom0123'
       }
-    ],*/
+    ],
     nav: [                  //右上角的导航栏
       {
         text: "框架",             //导航标签的名字
