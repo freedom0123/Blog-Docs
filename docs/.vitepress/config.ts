@@ -1,6 +1,7 @@
 import { getThemeConfig, defineConfig } from '@sugarat/theme/node'
 
 const blogTheme = getThemeConfig({
+
   // 文章默认作者
   author: 'Hao Long',
   // @ts-ignore
@@ -58,6 +59,8 @@ export default defineConfig({
   extends: blogTheme,
   lang: 'zh-cn',
   title: 'Hao Long',
+  method: 'history',
+  base: '/code/',
   description: '粥里有勺糖的博客主题，基于 vitepress 实现',
   vite: {
     optimizeDeps: {
@@ -84,7 +87,10 @@ export default defineConfig({
       {
         text: "框架",             //导航标签的名字
         items: [                  //这种格式是有下拉菜单的版本+
-          { text: "MyBatis", link: "/MyBatis/学习笔记/01.回顾JDBC" }
+          { text: "MyBatis", link: "/MyBatis/学习笔记/01.回顾JDBC" },
+          { text: "Spring", link: "/Spring/源码/01.Spring中的工厂" },
+          { text: "SpringSecurity", link: "/SpringSecurity/01.SpringSecurity" },
+          { text: "SpringBoot", link: "/SpringBoot/01.Starter开发" },
         ]
       },
       {
@@ -103,16 +109,11 @@ export default defineConfig({
       {
         text: "算法",
         items: [
-          { text: "算法学习", link: "/前端/React/01.React简介"},
-          { text: "刷题", link: "/算法/刷题/01.剑指Offer"}
+          { text: "二分", link: "/算法/01.二分"},
         ]
       },
       {
-        text: "项目",
-        items: [
-          { text: "芋道开发平台", link: "/前端/React/01.React简介"},
-          { text: "工作积累", link: "/前端/React/01.React简介"}
-        ]
+          text: "工作积累", link: "/项目/01.日志"
       }
     ],
     // @ts-ignore
